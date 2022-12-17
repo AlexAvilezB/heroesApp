@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.fxFlex {
+    width: 60%;
+}
+
+img {
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+@media screen and (max-width: 992px) {
+    .flex {
+        flex-direction: column;
+        display: flex;
+    }
+    .fxFlex {
+        width: 100%;
+    }
+}
