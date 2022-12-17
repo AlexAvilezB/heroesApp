@@ -1,0 +1,34 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fxFlex {
+    width: 20%;
+}
+
+@media screen and (min-width: 1280px) {
+    .fxFlex {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .fxFlex {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .fxFlex {
+        width: 100%;
+    }
+}

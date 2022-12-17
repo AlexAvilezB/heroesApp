@@ -5,8 +5,7 @@ import { Heroe } from '../../interface/heroes.interface';
 @Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
-  styles: [
-  ]
+  styleUrls: ['./listado.component.css'],
 })
 export class ListadoComponent implements OnInit {
 
