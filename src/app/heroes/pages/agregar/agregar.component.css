@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.fxFlex {
+    width: 50%;
+}
+
+.fxFlexField {
+    width: 100%;
+}
+
+img {
+     width: 100%;
+     border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .fxFlex {
+        width: 100%;
+    }
+}
