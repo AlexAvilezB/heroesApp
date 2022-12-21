@@ -1,4 +1,9 @@
-<h1>Nuevo Heroe - <small>{{ heroe.superhero }}</small></h1>
+<h1>
+     {{ ( heroe.id )
+        ?'Editar'
+        :'Nuevo'
+     }}
+     Heroe - <small>{{ heroe.superhero }}</small></h1>
 
 <div class="flex">
     <div class="fxFlex">
@@ -41,7 +46,10 @@
         <div class="flex gap">
             <button mat-raised-button class="fxFlexField" color="accent" (click)="guardar()">
             <mat-icon>edit</mat-icon>
-            Guardar
+            {{ ( heroe.id )
+                ?'Guardar'
+                :'Crear'
+            }}
             </button>
             <button mat-raised-button class="fxFlexField" color="warn" (click)="borrar()" *ngIf="heroe.id">
                 <mat-icon>delete</mat-icon>
